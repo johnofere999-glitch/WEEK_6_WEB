@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #222;
+}
+
+header {
+    background-color: #1f6f5c;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+
+/* Dashboard */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Add Expense */
+
+#add-expense {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #1f6f5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #185747;
+}
+
+#feedback {
+    font-weight: bold;
+}
+
+
+/* Expenses */
+
+.expenses {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.expense-info strong {
+    display: block;
+}
+
+.expense-info small {
+    color: #666;
+}
+
+.expense-amount {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+
+}
